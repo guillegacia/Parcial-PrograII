@@ -3,21 +3,32 @@ function llenartabla(){
     var precio  = document.getElementById("precio").value
     var cantidad = document.getElementById("cantidad").value
     var compra = document.getElementById("compra").value
-    var presupuesto = document.getElementById("presupuesto")
+    var presupuesto = document.getElementById("presupuesto").value
     var subtotal = cantidad*precio 
+    var numproductos = []
 
-    var precio1 = precio
-    var cantidad1 = cantidad
-    var compra1 = compra
-    var subtotal1 = subtotal
+    
+    
+    var precio1 =[] 
+    var cantidad1  = []
+    var compra1 = []
+    var subtotal1 = []
+
+
+    var precio1 = precio + precio1
+    var cantidad1  = cantidad + cantidad1
+    var compra1 = compra + compra1
+    var subtotal1 = subtotal + subtotal1
+    
+    
     
     if (subtotal > presupuesto)
         var estado = "sobre"
     else
-        var estado = "dentro" 
-
-
-
+        var estado = "dento"
+    
+    
+    
 
     var resultElement1 = document.getElementById("compra1")
     resultElement1.innerText = compra1
