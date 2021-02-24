@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 5</title>
+</head>
+<body>
+    <br>
+    <br>
+    <label for="compra" >Compra</label>
+    <input type="text" id="compra" placeholder="inserta tu compra">
+    <label for="precio" >Precio</label>
+    <input type="number" id="precio" placeholder="inserta el precio">
+    <label for="cantidad" >Cantidad</label>
+    <input type="number" id="cantidad" placeholder="inserta la cantidad">
+    <label for="presupuesto" >Presupuesto</label>
+    <select name="presupuesto" id="presupuesto"> 
+        <option value= 50>50</option>
+        <option value= 100>100</option>
+        <option value= 250>250</option>
+        <option value= 500>500</option>
+    </select>  
+
+    <button onclick="llenartabla()">send</button>
+
+    <br>
+    <br> 
+    <br>
+
+    <table style="width:100%">
+        <tr>
+          <th>Compra</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Subtotal</th>
+          <th>estado</th>
+        </tr>
+        <tr>
+            <td id="compra1"></td>
+            <td id="precio1"></td>
+            <td id="cantidad1"></td>
+            <td id="subtotal1"></td>
+            <td id="estado1"></td>
+        </tr>
+
+    </table>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
